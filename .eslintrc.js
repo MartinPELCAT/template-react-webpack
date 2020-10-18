@@ -4,7 +4,6 @@ module.exports = {
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended",
-    "@typescript-eslint/no-var-requires",
   ],
   parserOptions: {
     ecmaVersion: 2018,
@@ -12,6 +11,7 @@ module.exports = {
   },
   plugins: ["prettier"],
   rules: {
+    "@typescript-eslint/no-var-requires": "off",
     "@typescript-eslint/no-non-null-assertion": "off",
     "prettier/prettier": [
       "error",
